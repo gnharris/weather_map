@@ -39,7 +39,7 @@ if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(
         position => {
             const { latitude, longitude } = position.coords;
-            map.setView([latitude, longitude], 13);
+            map.setView([latitude, longitude], 12);
             fetchWeatherStations(latitude, longitude);
         }
     );
